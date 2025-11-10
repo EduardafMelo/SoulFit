@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinos - SoulFit</title>
+    <link rel="stylesheet" href="../css/treino.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/padronizado.css">
+</head>
+
+<body>
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar">
+        <div class="nav_logo">
+            <img src="../img/logo.png" alt="Logo SoulFit">
+        </div>
+
+        <!-- Menu (desktop) -->
+        <ul class="nav_links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="dieta.html">Dieta</a></li>
+            <li><a href="treino.html">Treinos</a></li>
+            <li><a href="metas.html">Metas</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+
+        <button class="btn" onclick="document.getElementById('contato').scrollIntoView({behavior: 'smooth'})">
+            Acesse aqui
+        </button>
+
+        <div class="nav_menu_btn">&#9776;</div>
+
+        <!-- Botão X e wrapper para mobile -->
+        <div class="nav_links_wrapper">
+            <span class="close-btn">&times;</span>
+           
+            <!-- Menu (mobile) -->
+            <ul class="nav_links_wrapper_links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dieta.html">Dieta</a></li>
+                <li><a href="treino.html">Treinos</a></li>
+                <li><a href="metas.html">Metas</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero_container">
+            <div class="hero_texto">
+                <h1>Mexa-se e sinta a diferença!</h1>
+                <p>Aqui na SoulFit, cada treino é um passo rumo à sua melhor versão. Não importa o ritmo — o
+                    importante é começar, persistir e celebrar cada conquista.</p>
+            </div>
+        </div>
+        <div class="diferenciais">
+            <div class="card">
+                <i class="ri-fire-line"></i>
+                <p>Queima de gordura</p>
+            </div>
+            <div class="card">
+                <i class="ri-rocket-fill"></i>
+                <p>Ganho de força</p>
+            </div>
+            <div class="card">
+                <i class="ri-mental-health-line"></i>
+                <p>Bem-estar</p>
+            </div>
+            <div class="card">
+                <i class="ri-flashlight-fill"></i>
+                <p>Mais energia</p>
+            </div>
+            <div class="btn_wrapper">
+                <button class="btn" onclick="document.getElementById('imc').scrollIntoView({behavior: 'smooth'})">
+                    Comece Agora
+                </button>
+            </div>
+        </div>
+
+        <div class="separador"></div>
+
+        <section class="galeria">
+            <h2>Conheça nossa academia</h2>
+            <p>Explore nosso espaço, equipamentos modernos e ambiente motivador.</p>
+            <div class="galeria_grid">
+                <div class="galeria_item">
+                    <img src="../img/academia1.jpg" alt="Academia 1">
+                </div>
+                <div class="galeria_item">
+                    <img src="../img/academia2.jpg" alt="Academia 2">
+                </div>
+                <div class="galeria_item">
+                    <img src="../img/academia3.jpg" alt="Academia 3">
+                </div>
+                <div class="galeria_item">
+                    <img src="../img/academia4.jpg" alt="Academia 4">
+                </div>
+            </div>
+        </section>
+
+        </div>
+    </section>
+
+    <div class="separador"></div>
+
+    <section class="categorias">
+        <div class="tabs">
+            <button class="tab active" data-tab="emagrecimento">🏃‍♀️ Emagrecimento</button>
+            <button class="tab" data-tab="manutencao">⚖️ Manutenção</button>
+            <button class="tab" data-tab="massa">💪 Ganho de Massa</button>
+        </div>
+
+        <div class="conteudo active" id="emagrecimento">
+            <ul>
+                <li>
+                    <i class="ri-fire-line" data-emoji="🔥"></i>
+                    <span class="texto">HIIT Intenso – 20min • Queima rápida de gordura</span>
+                </li>
+                <li>
+                    <i class="ri-run-line" data-emoji="🏃‍♀️"></i>
+                    <span class="texto">Corrida Intervalada – 25min • Acelera o metabolismo</span>
+                </li>
+                <li>
+                    <i class="ri-walk-line" data-emoji="🚶‍♀️"></i>
+                    <span class="texto">Caminhada Acelerada – 40min • Ideal para iniciantes</span>
+                </li>
+                <!-- adicione os outros itens seguindo esse padrão -->
+            </ul>
+        </div>
+
+        <div class="conteudo" id="manutencao">
+            <ul>
+                <li><i class="ri-heart-pulse-line" data-emoji="💗"></i><span class="texto">Treino Leve Full Body – 25min
+                        • Mantém o tônus</span></li>
+                <li><i class="ri-sparkling-line"></i><span class="texto">Yoga Flow – 35min • Força,
+                        equilíbrio e foco</span></li>
+                <!-- ... -->
+            </ul>
+        </div>
+
+        <div class="conteudo" id="massa">
+            <ul>
+                <li><i class="ri-battery-2-charge-line"></i></i><span class="texto">Inferior Intenso – 40min •
+                        Pernas e glúteos</span></li>
+                <li><i class="ri-weight-line" data-emoji="🏋️"></i><span class="texto">Superior Strong – 35min • Braços
+                        e costas</span></li>
+                <!-- ... -->
+            </ul>
+        </div>
+    </section>
+
+    <section class="imc-section" id="imc">
+        <h2>Calcule seu IMC</h2>
+        <div class="imc-box">
+            <input type="number" id="peso" placeholder="Peso (kg)">
+            <input type="number" id="altura" placeholder="Altura (m)">
+            <button id="calcular">Calcular IMC</button>
+            <p id="resultado"></p>
+        </div>
+    </section>
+
+    <script src="../script/treino.js"></script>
+    <script src="../script/menu.js"></script>
+
+</body>
+
+<!-- ===== RODAPÉ ===== -->
+<footer class="footer" id="contato">
+    <div class="footer_top">
+        <div class="footer_logo">
+            <img src="../img/logo.png" alt="Logo SoulFit">
+        </div>
+        <div class="footer_links">
+            <div class="footer_item">
+                <i class="ri-whatsapp-line"></i>
+                <a href="#">(11) 91234-5678</a>
+            </div>
+            <div class="footer_item">
+                <i class="ri-instagram-line"></i>
+                <a href="#">@soulfitoficial</a>
+            </div>
+            <div class="footer_item">
+                <i class="ri-mail-line"></i>
+                <a href="#">contato@soulfit.com</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer_bottom">
+        <p>© 2025 SoulFit. Todos os direitos reservados.</p>
+    </div>
+</footer>
+
+</html>

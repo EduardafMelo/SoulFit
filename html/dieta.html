@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dieta-SoulFit</title>
+    <link rel="stylesheet" href="../css/dieta.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/padronizado.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar">
+        <div class="nav_logo">
+            <img src="../img/logo.png" alt="Logo SoulFit">
+        </div>
+
+        <!-- Menu (desktop) -->
+        <ul class="nav_links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="dieta.html">Dieta</a></li>
+            <li><a href="treino.html">Treinos</a></li>
+            <li><a href="metas.html">Metas</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+
+        <button class="btn" onclick="document.getElementById('contato').scrollIntoView({behavior: 'smooth'})">
+            Acesse aqui
+        </button>
+
+        <div class="nav_menu_btn">&#9776;</div>
+
+        <!-- Botão X e wrapper para mobile -->
+        <div class="nav_links_wrapper">
+            <span class="close-btn">&times;</span>
+
+             <!-- Menu (mobile) -->
+            <ul class="nav_links_wrapper_links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dieta.html">Dieta</a></li>
+                <li><a href="treino.html">Treinos</a></li>
+                <li><a href="metas.html">Metas</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ===== CONTEÚDO PRINCIPAL ===== -->
+    <main>
+        <h1>Receitas SoulFit</h1>
+
+        <h2>Salgados</h2>
+        <div class="cards-container">
+            <div class="card">
+                <img src="../img/strogonoff.png" alt="Strogonoff" class="card-img">
+                <h3 class="card-title">Strogonoff fit</h3>
+                <button class="card-btn" onclick="abrirModal('strogonoff')">Ver Receita</button>
+            </div>
+            <div class="card">
+                <img src="../img/omelete.png" alt="Omelete" class="card-img">
+                <h3 class="card-title">Omelete fit</h3>
+                <button class="card-btn" onclick="abrirModal('omelete')">Ver Receita</button>
+            </div>
+            <div class="card">
+                <img src="../img/quibe.png" alt="Quibe" class="card-img">
+                <h3 class="card-title">Quibe fit</h3>
+                <button class="card-btn" onclick="abrirModal('quibe')">Ver Receita</button>
+            </div>
+            <div class="card">
+                <img src="../img/coxinha.jpg" alt="Coxinha Fit" class="card-img">
+                <h3 class="card-title">Cachorro Quente fit</h3>
+                <button class="card-btn" onclick="abrirModal('coxinha')">Ver Receita</button>
+            </div>
+            <div class="card">
+                <img src="../img/pastel.webp" alt="Pastel" class="card-img">
+                <h3 class="card-title">Pastel fit</h3>
+                <button class="card-btn" onclick="abrirModal('pastel')">Ver Receita</button>
+            </div>
+            <div class="card">
+                <img src="../img/crepioca.jpg" alt="Crepioca" class="card-img">
+                <h3 class="card-title">Crepioca fit</h3>
+                <button class="card-btn" onclick="abrirModal('crepioca')">Ver Receita</button>
+            </div>
+            <div class="card">
+                <img src="../img/almondega.jpg" alt="Almondega" class="card-img">
+                <h3 class="card-title">Almondega fit</h3>
+                <button class="card-btn" onclick="abrirModal('almondega')">Ver Receita</button>
+            </div>
+            <div class="card">
+                <img src="../img/espaguete.jpg" alt="espaguete" class="card-img">
+                <h3 class="card-title">Espaguete fit</h3>
+                <button class="card-btn" onclick="abrirModal('espaguete')">Ver Receita</button>
+            </div>
+            <div class="card">
+                <img src="../img/paodequeijo.jpg" alt="paodequeijo" class="card-img">
+                <h3 class="card-title">Pão de Queijo fit</h3>
+                <button class="card-btn" onclick="abrirModal('paodequeijo')">Ver Receita</button>
+            </div>
+            <div class="card">
+                <img src="../img/torta-de-frango-fit.jpg" alt="Hamburguer" class="card-img">
+                <h3 class="card-title">Torta de Frango fit</h3>
+                <button class="card-btn" onclick="abrirModal('torta')">Ver Receita</button>
+            </div>
+        </div>
+
+        <h2>Doces</h2>
+        <div class="cards-container">
+            <div class="card">
+                <img src="../img/brigadeiro.jpeg" alt="Brigadeiro" class="card-img">
+                <h3 class="card-title">Brigadeiro fit</h3>
+                <button class="card-btn" onclick="abrirModal('brigadeiro')">Ver Receita</button>
+            </div>
+            <div class="card">
+                <img src="../img/bolodecenoura.avif" alt="Bolo de Cenoura" class="card-img">
+                <h3 class="card-title">Bolo de Cenoura fit</h3>
+                <button class="card-btn" onclick="abrirModal('boloCenoura')">Ver Receita</button>
+            </div>
+            <div class="card">
+                <img src="../img/mousse.webp" alt="Mousse" class="card-img">
+                <h3 class="card-title">Mousse fit</h3>
+                <button class="card-btn" onclick="abrirModal('mousse')">Ver Receita</button>
+            </div>
+            <div class="card">
+                <img src="../img/pudim.webp" alt="Pudim" class="card-img">
+                <h3 class="card-title">Pudim fit</h3>
+                <button class="card-btn" onclick="abrirModal('pudim')">Ver Receita</button>
+            </div>
+            <div class="card">
+                <img src="../img/tortadoce.avif" alt="Torta" class="card-img">
+                <h3 class="card-title">Torta fit</h3>
+                <button class="card-btn" onclick="abrirModal('tortaDoce')">Ver Receita</button>
+            </div>
+            <div class="card">
+                <img src="../img/brownie.webp" alt="Brownie" class="card-img">
+                <h3 class="card-title">Brownie fit</h3>
+                <button class="card-btn" onclick="abrirModal('brownie')">Ver Receita</button>
+            </div>
+            <div class="card">
+                <img src="../img/panqueca.jpeg" alt="Panqueca" class="card-img">
+                <h3 class="card-title">Panqueca fit</h3>
+                <button class="card-btn" onclick="abrirModal('panqueca')">Ver Receita</button>
+            </div>
+            <div class="card">
+                <img src="../img/waffle.webp" alt="Waffle" class="card-img">
+                <h3 class="card-title">Waffle fit</h3>
+                <button class="card-btn" onclick="abrirModal('waffle')">Ver Receita</button>
+            </div>
+            <div class="card">
+                <img src="../img/smoothie.webp" alt="smoothie" class="card-img">
+                <h3 class="card-title">Smoothie</h3>
+                <button class="card-btn" onclick="abrirModal('smoothie')">Ver Receita</button>
+            </div>
+            <div class="card">
+                <img src="../img/sorvete.jpg" alt="Sorvete Fit" class="card-img">
+                <h3 class="card-title">Sorvete fit</h3>
+                <button class="card-btn" onclick="abrirModal('sorvete')">Ver Receita</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- ===== MODAL ===== -->
+    <div id="modal" class="modal">
+        <div class="modal-conteudo" id="modal-conteudo">
+            <span class="fechar" onclick="fecharModal()">&times;</span>
+        </div>
+    </div>
+
+    <footer class="footer" id="contato">
+        <div class="footer_top">
+            <div class="footer_logo">
+                <img src="../img/logo.png" alt="Logo SoulFit">
+            </div>
+            <div class="footer_links">
+                <div class="footer_item">
+                    <i class="ri-whatsapp-line"></i>
+                    <a href="#">(11) 91234-5678</a>
+                </div>
+                <div class="footer_item">
+                    <i class="ri-instagram-line"></i>
+                    <a href="#">@soulfitoficial</a>
+                </div>
+                <div class="footer_item">
+                    <i class="ri-mail-line"></i>
+                    <a href="#">contato@soulfit.com</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <p>© 2025 SoulFit. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../script/script.js"></script>
+    <script src="../script/menu.js"></script>
+
+</body>
+
+</html>

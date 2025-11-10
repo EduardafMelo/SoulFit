@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Progresso - SoulFit</title>
+  <link rel="stylesheet" href="../css/metas.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/padronizado.css">
+</head>
+
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <div class="nav_logo">
+      <img src="../img/logo.png" alt="Logo SoulFit">
+    </div>
+
+    <!-- Menu (desktop) -->
+    <ul class="nav_links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="dieta.html">Dieta</a></li>
+      <li><a href="treino.html">Treinos</a></li>
+      <li><a href="metas.html">Metas</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+
+    <button class="btn" onclick="document.getElementById('contato').scrollIntoView({behavior: 'smooth'})">
+      Acesse aqui
+    </button>
+
+    <div class="nav_menu_btn">&#9776;</div>
+
+    <!-- Botão X e wrapper para mobile -->
+    <div class="nav_links_wrapper">
+      <span class="close-btn">&times;</span>
+
+       <!-- Menu (mobile) -->
+      <ul class="nav_links_wrapper_links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dieta.html">Dieta</a></li>
+        <li><a href="treino.html">Treinos</a></li>
+        <li><a href="metas.html">Metas</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </div>
+  </nav>
+ 
+  <section class="progresso-section">
+    <div class="container">
+      <h1>Seu Progresso</h1>
+      <p>Acompanhe seu peso, meta e evolução ao longo do tempo!</p>
+
+      <!-- Mensagem motivacional -->
+      <div class="mensagem" id="mensagem"></div>
+
+      <!-- FORMULÁRIO -->
+      <form id="formProgresso">
+        <div class="form-group">
+          <label for="peso">Peso Atual (kg)</label>
+          <input type="number" id="peso" required step="0.1">
+        </div>
+        <div class="form-group">
+          <label for="meta">Meta de Peso (kg)</label>
+          <input type="number" id="meta" required step="0.1">
+        </div>
+        <div class="form-group">
+          <label for="gordura">% de Gordura (opcional)</label>
+          <input type="number" id="gordura" step="0.1">
+        </div>
+        <button type="submit" class="btn">Atualizar Progresso</button>
+      </form>
+
+      <!-- GRÁFICO -->
+      <canvas id="graficoProgresso"></canvas>
+
+      <!-- TABELA DE EVOLUÇÃO -->
+      <div class="tabela-wrapper">
+        <table id="tabelaProgresso">
+          <thead>
+            <tr>
+              <th>Data</th>
+              <th>Peso (kg)</th>
+              <th>Meta (kg)</th>
+              <th>Diferença</th>
+              <th>% Gordura</th>
+              <th>Observações</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Dados serão inseridos pelo JS -->
+          </tbody>
+        </table>
+      </div>
+
+
+  </section>
+
+  <!-- ===== RODAPÉ ===== -->
+  <footer class="footer" id="contato">
+    <div class="footer_top">
+      <div class="footer_logo">
+        <img src="../img/logo.png" alt="Logo SoulFit">
+      </div>
+      <div class="footer_links">
+        <div class="footer_item">
+          <i class="ri-whatsapp-line"></i>
+          <a href="#">(11) 91234-5678</a>
+        </div>
+        <div class="footer_item">
+          <i class="ri-instagram-line"></i>
+          <a href="#">@soulfitoficial</a>
+        </div>
+        <div class="footer_item">
+          <i class="ri-mail-line"></i>
+          <a href="#">contato@soulfit.com</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer_bottom">
+      <p>© 2025 SoulFit. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="../script/metas.js"></script>
+  <script src="../script/menu.js"></script>
+
+</body>
+
+</html>

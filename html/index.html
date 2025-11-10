@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SoulFit</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/padronizado.css">
+</head>
+
+<body>
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <div class="nav_logo">
+      <img src="../img/logo.png" alt="Logo SoulFit">
+    </div>
+
+    <!-- Menu (desktop) -->
+    <ul class="nav_links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="dieta.html">Dieta</a></li>
+      <li><a href="treino.html">Treinos</a></li>
+      <li><a href="metas.html">Metas</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+
+    <button class="btn" onclick="document.getElementById('contato').scrollIntoView({behavior: 'smooth'})">
+      Acesse aqui
+    </button>
+
+    <div class="nav_menu_btn">&#9776;</div>
+
+    <!-- Botão X e wrapper para mobile -->
+    <div class="nav_links_wrapper">
+      <span class="close-btn">&times;</span>
+      
+      <!-- Menu (mobile) -->
+      <ul class="nav_links_wrapper_links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dieta.html">Dieta</a></li>
+        <li><a href="treino.html">Treinos</a></li>
+        <li><a href="metas.html">Metas</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero_text">
+      <h1>
+        <span class="h1-primeira-linha">Supere seus limites, viva com energia</span>
+        <span class="h1-segunda-linha">e alcance a melhor versão de você mesmo!</span>
+      </h1>
+      <p>
+        Na SoulFit, acreditamos que cada pessoa tem um potencial único. Por isso, oferecemos programas personalizados de
+        treino e orientação nutricional para você alcançar resultados de forma saudável e sustentável. Seja para ganhar
+        massa, perder gordura ou simplesmente viver com mais energia, estamos ao seu lado em cada passo da sua jornada.
+      </p>
+      <button class="btn" id="exploreBtn">Explore mais!</button>
+    </div>
+    <div class="hero_image">
+      <img src="../img/banner.jpg" alt="Banner SoulFit">
+    </div>
+  </section>
+
+  <!-- ===== MODAL EXPLORE MAIS ===== -->
+  <div class="modal" id="exploreModal">
+    <div class="modal_content">
+      <span class="close_btn" id="closeModal">&times;</span>
+      <h2>História da SoulFit</h2>
+      <p>
+        A SoulFit nasceu da paixão por saúde e bem-estar, com o objetivo de criar programas de treino e nutrição
+        personalizados. Começamos pequenos, mas nossa comunidade cresceu rapidamente! Algumas curiosidades: nosso
+        primeiro treino online teve mais de 1000 inscritos, e nosso smoothie mais popular é o detox de frutas vermelhas.
+      </p>
+    </div>
+  </div>
+
+  <!-- ===== BENEFÍCIOS COM CARDS ===== -->
+  <section class="benefits">
+    <h2 class="titulo">Por que escolher a SoulFit?</h2>
+    <div class="benefits_container">
+      <div class="benefit_card">
+        <div class="card_icon">
+          <i class="ri-run-line"></i>
+        </div>
+        <h3>Treinos Personalizados</h3>
+        <p>Planos adaptados ao seu objetivo, seja ganhar massa, perder gordura ou manter a forma.</p>
+      </div>
+
+      <div class="benefit_card">
+        <div class="card_icon">
+          <i class="ri-leaf-line"></i>
+        </div>
+        <h3>Nutrição Saudável</h3>
+        <p>Dicas práticas e acompanhamento nutricional para resultados reais e sustentáveis.</p>
+      </div>
+
+      <div class="benefit_card">
+        <div class="card_icon">
+          <i class="ri-group-line"></i>
+        </div>
+        <h3>Comunidade Engajada</h3>
+        <p>Participe de desafios, eventos e motivação diária com nossa comunidade.</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="../script/script.js"></script>
+  <script src="../script/menu.js"></script>
+
+</body>
+
+<!-- ===== RODAPÉ ===== -->
+<footer class="footer" id="contato">
+  <div class="footer_top">
+    <div class="footer_logo">
+      <img src="../img/logo.png" alt="Logo SoulFit">
+    </div>
+    <div class="footer_links">
+      <div class="footer_item">
+        <i class="ri-whatsapp-line"></i>
+        <a href="#">(11) 91234-5678</a>
+      </div>
+      <div class="footer_item">
+        <i class="ri-instagram-line"></i>
+        <a href="#">@soulfitoficial</a>
+      </div>
+      <div class="footer_item">
+        <i class="ri-mail-line"></i>
+        <a href="#">contato@soulfit.com</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer_bottom">
+    <p>© 2025 SoulFit. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+</html>

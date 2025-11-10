@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* ===== VARIÁVEIS DE CORES ===== */
+:root {
+    --roxo: #C78AFF;
+    --rosa: #FFE5EC;
+    --texto: #3A2E3E;
+    --lilas-claro: #F3E1FF;
+    --fundo: #FFF8FB;
+}
+
+/* ===== RESET ===== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--fundo);
+    color: var(--texto);
+    scroll-behavior: smooth;
+}
+
+/* SEÇÃO PROGRESSO */
+.progresso-section {
+    padding: 8rem 2rem 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.progresso-section .container {
+    width: 100%;
+    max-width: 800px;
+    background: #fff;
+    margin: 20PX;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.progresso-section h1 {
+    color: var(--roxo);
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.progresso-section p {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* FORMULÁRIO */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.form-group input {
+    padding: 0.8rem 1rem;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: var(--roxo);
+}
+
+button.btn {
+    padding: 0.8rem 1rem;
+    border: none;
+    border-radius: 12px;
+    background-color: var(--roxo);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button.btn:hover {
+    background-color: #a163e6;
+}
+
+/* MENSAGEM MOTIVACIONAL */
+.mensagem {
+    text-align: center;
+    font-weight: 600;
+    color: var(--roxo);
+    margin-bottom: 2rem;
+    font-size: 1rem;
+}
+
+/* GRÁFICO */
+canvas {
+    width: 100% !important;
+    max-height: 300px;
+    margin-bottom: 1rem;
+}
+
+/* TABELA */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 0.8rem;
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+th {
+    background-color: var(--roxo);
+    color: #fff;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+
