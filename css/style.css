@@ -132,7 +132,7 @@ body {
     .hero_text p {
         font-size: 1rem;
         line-height: 1.6rem;
-        text-align: center;
+        text-align: justify;
     }
 
     .hero_text .btn {
@@ -145,7 +145,7 @@ body {
         flex: 0 0 auto;
         order: 1;
         justify-content: center;
-        margin-bottom: 2rem;
+        margin-bottom: 1.8rem;
     }
 
     .hero_image img {
