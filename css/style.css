@@ -133,12 +133,12 @@ body {
         font-size: 1rem;
         line-height: 1.6rem;
         text-align: center;
-        margin-botton: 25px
     }
 
     .hero_text .btn {
         align-self: center;
         margin: 0 auto;
+        margin-bottom: 25px;
     }
 
     .hero_image {
