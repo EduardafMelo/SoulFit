@@ -138,14 +138,14 @@ body {
     .hero_text .btn {
         align-self: center;
         margin: 0 auto;
-        margin-bottom: 25px;
+        margin-bottom: 30px;
     }
 
     .hero_image {
         flex: 0 0 auto;
         order: 1;
         justify-content: center;
-        margin-bottom: 1.8rem;
+        margin-bottom: 1.6rem;
     }
 
     .hero_image img {
