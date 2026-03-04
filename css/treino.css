@@ -303,3 +303,222 @@ body {
         transform: translateY(0);
     }
 }
+
+/* ===== MEDIA QUERIES ===== */
+@media (max-width: 1024px) {
+    .galeria_grid {
+        gap: 15px;
+    }
+
+    .galeria_item {
+        flex: 1 1 calc(33.333% - 15px);
+    }
+
+    .galeria_item img {
+        height: 220px;
+    }
+
+    .diferenciais {
+        gap: 20px;
+    }
+
+    .card {
+        width: 160px;
+        padding: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 100px 15px 50px;
+    }
+
+    .hero_texto h1 {
+        font-size: 2.2rem;
+        margin-bottom: 15px;
+    }
+
+    .hero_texto p {
+        font-size: 1rem;
+        margin-bottom: 25px;
+    }
+
+    .btn {
+        padding: 0.7rem 1.5rem;
+        font-size: 0.95rem;
+    }
+
+    .diferenciais {
+        gap: 15px;
+        padding: 0 15px;
+    }
+
+    .card {
+        width: 140px;
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+
+    .card i {
+        font-size: 1.8rem;
+        margin-bottom: 8px;
+    }
+
+    .card p {
+        font-size: 0.9rem;
+    }
+
+    .galeria {
+        padding: 0 15px;
+    }
+
+    .galeria h2 {
+        font-size: 1.6rem;
+    }
+
+    .galeria p {
+        font-size: 1rem;
+        margin-bottom: 25px;
+    }
+
+    .galeria_grid {
+        gap: 12px;
+    }
+
+    .galeria_item {
+        flex: 1 1 calc(50% - 12px);
+    }
+
+    .galeria_item img {
+        height: 200px;
+    }
+
+    .tabs {
+        gap: 0.6rem;
+        margin: 1.5rem;
+    }
+
+    .tab {
+        padding: 0.55rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .conteudo ul {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+
+    .conteudo li {
+        padding: 10px 14px;
+        font-size: 0.95rem;
+    }
+
+    .imc-section {
+        padding: 2rem 1rem;
+        margin: 2rem 1rem;
+    }
+
+    .imc-box input {
+        width: 180px;
+        padding: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 90px 10px 40px;
+    }
+
+    .hero_texto h1 {
+        font-size: 1.8rem;
+        margin-bottom: 12px;
+    }
+
+    .hero_texto p {
+        font-size: 0.9rem;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+
+    .btn {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+    }
+
+    .diferenciais {
+        gap: 12px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 160px;
+        padding: 12px;
+    }
+
+    .card i {
+        font-size: 1.6rem;
+    }
+
+    .card p {
+        font-size: 0.85rem;
+    }
+
+    .separador {
+        margin: 30px auto;
+    }
+
+    .galeria {
+        padding: 0 10px;
+    }
+
+    .galeria h2 {
+        font-size: 1.4rem;
+    }
+
+    .galeria p {
+        font-size: 0.95rem;
+    }
+
+    .galeria_grid {
+        gap: 10px;
+    }
+
+    .galeria_item {
+        flex: 1 1 100%;
+    }
+
+    .galeria_item img {
+        height: 180px;
+    }
+
+    .tabs {
+        gap: 0.5rem;
+        margin: 1.2rem;
+    }
+
+    .tab {
+        padding: 0.5rem 0.9rem;
+        font-size: 0.85rem;
+    }
+
+    .conteudo li {
+        padding: 10px 12px;
+        font-size: 0.9rem;
+    }
+
+    .conteudo li i {
+        font-size: 1.2rem;
+        min-width: 30px;
+        min-height: 30px;
+    }
+
+    .imc-section {
+        padding: 1.5rem 1rem;
+        margin: 1.5rem 1rem;
+    }
+
+    .imc-box input {
+        width: 100%;
+        max-width: 200px;
+    }
+}
