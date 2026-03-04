@@ -138,4 +138,143 @@ tbody tr:nth-child(even) {
     background-color: #f9f9f9;
 }
 
+/* ===== MEDIA QUERIES ===== */
+@media (max-width: 1024px) {
+    .progresso-section .container {
+        max-width: 700px;
+        padding: 1.8rem;
+    }
+
+    .progresso-section h1 {
+        font-size: 2rem;
+    }
+
+    canvas {
+        max-height: 280px;
+    }
+}
+
+@media (max-width: 768px) {
+    .progresso-section {
+        padding: 100px 1rem 2rem;
+    }
+
+    .progresso-section .container {
+        margin: 0;
+        padding: 1.5rem;
+        border-radius: 15px;
+    }
+
+    .progresso-section h1 {
+        font-size: 1.8rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .progresso-section p {
+        font-size: 0.95rem;
+        margin-bottom: 1.5rem;
+    }
+
+    form {
+        gap: 1.2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .form-group label {
+        font-size: 0.9rem;
+    }
+
+    .form-group input {
+        padding: 0.7rem 0.9rem;
+        font-size: 0.95rem;
+    }
+
+    button.btn {
+        padding: 0.7rem 0.9rem;
+        font-size: 0.95rem;
+    }
+
+    .mensagem {
+        font-size: 0.95rem;
+        margin-bottom: 1.5rem;
+    }
+
+    canvas {
+        max-height: 250px;
+    }
+
+    table {
+        font-size: 0.85rem;
+    }
+
+    th,
+    td {
+        padding: 0.6rem 0.5rem;
+    }
+
+    .tabela-wrapper {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+}
+
+@media (max-width: 480px) {
+    .progresso-section {
+        padding: 90px 0.5rem 1.5rem;
+    }
+
+    .progresso-section .container {
+        padding: 1.2rem;
+        border-radius: 12px;
+    }
+
+    .progresso-section h1 {
+        font-size: 1.5rem;
+    }
+
+    .progresso-section p {
+        font-size: 0.9rem;
+        margin-bottom: 1.2rem;
+    }
+
+    form {
+        gap: 1rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .form-group label {
+        font-size: 0.85rem;
+        margin-bottom: 0.4rem;
+    }
+
+    .form-group input {
+        padding: 0.6rem 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    button.btn {
+        padding: 0.6rem 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    .mensagem {
+        font-size: 0.9rem;
+        margin-bottom: 1.2rem;
+        line-height: 1.4;
+    }
+
+    canvas {
+        max-height: 220px;
+    }
+
+    table {
+        font-size: 0.8rem;
+    }
+
+    th,
+    td {
+        padding: 0.5rem 0.3rem;
+    }
+}
+
 
