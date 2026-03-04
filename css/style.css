@@ -115,7 +115,7 @@ body {
         flex-direction: column;
         text-align: center;
         padding: 0 1.5rem;
-        margin-top: 100px;
+        margin-top: 110px;
     }
 
     .hero_text {
@@ -157,7 +157,7 @@ body {
 @media (max-width: 480px) {
     .hero {
         padding: 0 1rem;
-        margin-top: 90px;
+        margin-top: 80px;
     }
 
     .hero_text h1 {
