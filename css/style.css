@@ -58,7 +58,7 @@ body {
 }
 
 .h1-primeira-linha,
-.h1-segunda-linha {
+{
     display: block;
     text-align:justify
 }
