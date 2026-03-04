@@ -32,9 +32,9 @@ body {
     justify-content: space-between;
     gap: 2rem;
     flex-wrap: wrap;
-    min-height: calc(100vh - 80px); 
+    min-height: calc(100vh - 80px);
     padding: 0 4rem;
-    margin-top: 80px; 
+    margin-top: 80px;
 }
 
 .hero_text {
@@ -43,7 +43,7 @@ body {
     color: var(--white);
     display: flex;
     flex-direction: column;
-    justify-content: center; 
+    justify-content: center;
     height: 100%;
 }
 
@@ -53,8 +53,13 @@ body {
     margin-bottom: 1.5rem;
     font-weight: 800;
     font-style: italic;
-    border-bottom: 3px solid var(--white); 
+    border-bottom: 3px solid var(--white);
     padding-bottom: 0.3rem;
+}
+
+.h1-primeira-linha,
+.h1-segunda-linha {
+    display: block;
 }
 
 .hero_text p {
@@ -85,6 +90,87 @@ body {
     border-radius: 10px;
     object-fit: cover;
     box-shadow: 8px 15px 45px #1e0b49;
+}
+
+/* ===== MEDIA QUERIES PARA HERO SECTION ===== */
+@media (max-width: 1024px) {
+    .hero {
+        padding: 0 2rem;
+        min-height: auto;
+    }
+
+    .hero_text h1 {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+    .hero_image img {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 0 1.5rem;
+        margin-top: 120px;
+    }
+
+    .hero_text {
+        max-width: 100%;
+        order: 2;
+    }
+
+    .hero_text h1 {
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+        border-bottom: 2px solid var(--white);
+    }
+
+    .hero_text p {
+        font-size: 1rem;
+        line-height: 1.6rem;
+        text-align: center;
+    }
+
+    .hero_text .btn {
+        align-self: center;
+        margin: 0 auto;
+    }
+
+    .hero_image {
+        flex: 0 0 auto;
+        order: 1;
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+
+    .hero_image img {
+        max-width: 300px;
+        box-shadow: 5px 10px 30px #1e0b49;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 0 1rem;
+        margin-top: 110px;
+    }
+
+    .hero_text h1 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    .hero_text p {
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+    }
+
+    .hero_image img {
+        max-width: 250px;
+    }
 }
 
 /* ===== MODAL EXPLORE MAIS ===== */
@@ -122,7 +208,7 @@ body {
 /* ===== BENEFÍCIOS COM CARDS ===== */
 .benefits {
     padding: 4rem 2rem;
-    background-color:  rgb(207, 34, 166);
+    background-color: rgb(207, 34, 166);
     color: var(--white);
     text-align: center;
     scroll-margin-top: 100px;
@@ -170,6 +256,104 @@ body {
 .benefit_card p {
     font-size: 1rem;
     line-height: 1.5rem;
+}
+
+/* ===== MEDIA QUERIES PARA BENEFÍCIOS ===== */
+@media (max-width: 1024px) {
+    .benefits {
+        padding: 3rem 1.5rem;
+    }
+
+    .benefits .titulo {
+        font-size: 2.2rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .benefit_card {
+        width: 280px;
+        padding: 1.8rem;
+    }
+
+    .card_icon {
+        font-size: 2.8rem;
+    }
+
+    .benefit_card h3 {
+        font-size: 1.2rem;
+    }
+
+    .benefit_card p {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .benefits {
+        padding: 2.5rem 1rem;
+    }
+
+    .benefits .titulo {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .benefits_container {
+        gap: 1.5rem;
+    }
+
+    .benefit_card {
+        width: 100%;
+        max-width: 350px;
+        padding: 1.5rem;
+    }
+
+    .card_icon {
+        font-size: 2.5rem;
+    }
+
+    .benefit_card h3 {
+        font-size: 1.1rem;
+    }
+
+    .benefit_card p {
+        font-size: 0.9rem;
+        line-height: 1.4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .benefits {
+        padding: 2rem 0.8rem;
+    }
+
+    .benefits .titulo {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .benefits_container {
+        gap: 1rem;
+    }
+
+    .benefit_card {
+        width: 100%;
+        padding: 1.2rem;
+    }
+
+    .card_icon {
+        font-size: 2rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .benefit_card h3 {
+        font-size: 1rem;
+        margin-bottom: 0.6rem;
+    }
+
+    .benefit_card p {
+        font-size: 0.85rem;
+        line-height: 1.3rem;
+    }
 }
 
 
